@@ -117,12 +117,12 @@ class signup extends Component {
             />
             <TextField
               id="handle"
-              name="handle"
+              name="userHandle"
               type="text"
               label="Handle"
               className={classes.textField}
               helperText={errors.userHandle}
-              error={errors.handle ? true : false}
+              error={errors.userHandle ? true : false}
               value={this.state.userHandle}
               onChange={this.handleChange}
               fullWidth
