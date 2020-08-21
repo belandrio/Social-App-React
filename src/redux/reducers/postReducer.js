@@ -1,4 +1,4 @@
-import { SET_POSTS, LOADING_POST, LIKE_POST, UNLIKE_POST } from "../types";
+import { SET_POSTS, LOADING_POST, LIKE_POST, UNLIKE_POST, DELETE_POST } from "../types";
 
 const initialState = {
   posts: [],
@@ -26,6 +26,14 @@ export default function (state = initialState, action) {
       );
       // Refresh the post[index] equal to the action.payload with LikeCount in/decremented
       state.posts[index] = action.payload;
+      return {
+        ...state,
+      };
+    case DELETE_POST:
+      let indexi = state.posts.findIndex(
+        (post) => post.postId === action.payload
+      );
+      state.props.splice(indexi, 1);
       return {
         ...state,
       };

@@ -12,3 +12,4 @@ export const LOADING_POST = 'LOADING_POST';
 export const SET_POSTS = 'SET_POSTS';
 export const LIKE_POST = 'LIKE_POST';
 export const UNLIKE_POST = 'UNLIKE_POST';
+export const DELETE_POST = 'DELETE_POST';
