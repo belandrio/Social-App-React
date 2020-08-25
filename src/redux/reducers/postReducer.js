@@ -1,4 +1,4 @@
-import { SET_POSTS, LOADING_POST, LIKE_POST, UNLIKE_POST, DELETE_POST } from "../types";
+import { SET_POSTS, LOADING_POST, LIKE_POST, UNLIKE_POST, DELETE_POST, CREATE_POST } from "../types";
 
 const initialState = {
   posts: [],
@@ -37,6 +37,11 @@ export default function (state = initialState, action) {
       return {
         ...state,
       };
+    case CREATE_POST:
+      return {
+        ...state, 
+        posts: [action.payload, ...state.posts]
+      }
     default:
       return state;
   }
