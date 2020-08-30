@@ -33,6 +33,10 @@ export default function (state = initialState, action) {
       );
       // Refresh the post[index] equal to the action.payload with LikeCount in/decremented
       state.posts[index] = action.payload;
+      // Update the likeCount for dialog post
+      if (state.post.postId === action.payload.postId) {
+        state.post = action.payload;
+      }
       return {
         ...state,
       };
