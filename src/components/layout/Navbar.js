@@ -2,7 +2,7 @@ import React, { Component, Fragment } from "react";
 import { Link } from "react-router-dom";
 import { connect } from "react-redux";
 import PropTypes from "prop-types";
-import MyButton from "../util/MyButton";
+import MyButton from "../../util/MyButton";
 
 // Material UI
 import AppBar from "@material-ui/core/AppBar";
@@ -12,7 +12,7 @@ import Button from "@material-ui/core/Button";
 // Icons
 import HomeIcon from "@material-ui/icons/Home";
 import Notifications from "@material-ui/icons/Notifications";
-import CreatePost from "./CreatePost";
+import CreatePost from "../post/CreatePost";
 
 class Navbar extends Component {
   render() {

@@ -1,7 +1,7 @@
 import React, { Component, Fragment } from 'react';
 import PropTypes from 'prop-types';
 import withStyles from '@material-ui/core/styles/withStyles';
-import MyButton from '../util/MyButton';
+import MyButton from '../../util/MyButton';
 
 // Material Ui
 import Button from '@material-ui/core/Button';
@@ -15,7 +15,7 @@ import CloseIcon from '@material-ui/icons/Close';
 
 // Redux
 import { connect } from 'react-redux';
-import { createPost, clearErrors } from '../redux/actions/postActions';
+import { createPost, clearErrors } from '../../redux/actions/postActions';
 
 const styles = (theme) => ({
   ...theme.spreadThis,
