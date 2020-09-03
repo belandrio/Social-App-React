@@ -6,6 +6,7 @@ import dayjs from "dayjs";
 import { Link } from "react-router-dom";
 import LikeButton from "./LikeButton";
 import Comments from './Comments';
+import CommentForm from './CommentForm';
 
 // Material Ui
 import Dialog from "@material-ui/core/Dialog";
@@ -109,8 +110,8 @@ class PostDialog extends Component {
           </MyButton>
           <span>{commentCount} Comments</span>
         </Grid>
-        {/* TODO: comment input */}
         <hr className={classes.visibleSeparator} />
+        <CommentForm postId={postId} />
         <Comments comments={comments} />
       </Grid>
     );
