@@ -18,7 +18,7 @@ const styles = (t => ({
   paper: {
     padding: 30, 
     marginLeft: "10px"
-  },
+
   profile: {
     '& .image-wrapper': {
       textAlign: 'center',
