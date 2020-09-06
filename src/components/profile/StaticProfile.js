@@ -14,7 +14,7 @@ import LocationOn from '@material-ui/icons/LocationOn';
 import LinkIcon from '@material-ui/icons/Link';
 import CalendarToday from '@material-ui/icons/CalendarToday';
 
-const styles = (theme) => ({
+const styles = (t => ({
   paper: {
     padding: 30, 
     marginLeft: "10px"
